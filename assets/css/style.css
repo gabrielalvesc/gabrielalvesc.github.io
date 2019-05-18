@@ -63,3 +63,21 @@ p {
 .icons:hover {
     color: lightgray;
 }
+
+.icons span {
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: normal;
+    margin-left: 3px; 
+}
+
+@media screen and (max-width: 568px){
+    .icons {
+        font-size: 20px;
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .icons span {
+        display: none;
+    }
+}
