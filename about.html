@@ -9,40 +9,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Icons     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <title>Gabriel A. - Portfólio</title>
 </head>
 
-<body>
+<body class="about">
     <div class="container">
+        <div class="text-center">
+            <img src="./assets/img/me.jpg" class="rounded-circle img-fluid img-thumbnail img-me">
+        </div>
         <div class="row">
-            <div class="col-md-8 offset-md-2 centered" align="center" id="titulo">
+            <div class="col-md-12">
+                <h1>About me.</h1>
+                <p class="recuo"> I graduated in information systems from the Federal University of Paraíba, where I was
+                    able to
+                    participate in some projects and work in the junior company Eagle Soluções e Sistemas, both as a
+                    front-end developer. Focusing on the use of Angular as a framework for development, as well as
+                    mastering
+                    HTML, CSS and JavaScript. Ahead are some projects developed by me.</p>
             </div>
         </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <a href="https://github.com/gabrielalvesc" target="blank" class="icons"><i class="fab fa-github"></i>/gabrielalvesc</a>
+                <a href="https://www.linkedin.com/in/gabrielalvesc/" target="blank" class="icons"><i class="fab fa-linkedin"></i>/gabrielalvesc</a>
+                <a href="mailto:gabriel.alves@dce.ufpb.br" target="blank" class="icons"><i class="fas fa-envelope" style="margin-right:5px"></i>gabriel.alves@dce.ufpb.br</a>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 offset-md-2 centered" align="center" id="titulo">
+            </div>
+        </div> -->
     </div>
-
-    <script type="text/javascript">
-        window.onload = function () {
-            var txtTitulo = "Something here soon...";
-            var txt1 = document.getElementById("titulo");
-            $("a").hide()
-
-            var speed = 100;
-            var cont = 0;
-            var aux = cont + 1;
-            function typeWriter() {
-                if (cont < txtTitulo.length) {
-                    txt1.innerHTML += txtTitulo.charAt(cont);
-                    cont++;
-                    setTimeout(typeWriter, speed);
-                } else {
-                    cont = 0;
-                    $("a").show()
-                }
-            }
-            typeWriter();
-        };
-    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
