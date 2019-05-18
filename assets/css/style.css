@@ -1,0 +1,29 @@
+body {
+    background-color: blueviolet !important; 
+    font-family: 'Roboto Mono', monospace !important;
+    color: white !important;
+    font-size: 40px !important;
+}
+
+.centered {
+    position: fixed;
+    margin-top: 20%;
+}
+
+.btn-about {
+    border: 2px solid white;
+    position: fixed;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left:19%; 
+    margin-right:15%;
+}
+
+a:hover {
+    color: blueviolet !important;
+    text-decoration: none !important;
+    background-color: white !important;
+}
